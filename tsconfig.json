@@ -1,0 +1,15 @@
+{
+  "extends": "./.playground/.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noImplicitThis": false,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "isolatedModules": false
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

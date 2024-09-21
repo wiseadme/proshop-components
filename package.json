@@ -1,0 +1,46 @@
+{
+  "name": "@wiseadme/proshop-components",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "license": "MIT",
+  "engines": {
+    "yarn": "^1",
+    "node": "^20.15.0"
+  },
+  "files": [
+    "components/",
+    "nuxt.config.ts"
+  ],
+  "scripts": {
+    "dev": "nuxi dev .playground",
+    "dev:prepare": "nuxt prepare .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "eslint ."
+  },
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com",
+      "allowBranch": "master"
+    }
+  },
+  "dependencies": {
+    "@nuxtjs/device": "^3.1.1",
+    "@proshop-app/composables": "^0.0.69",
+    "@proshop-app/helpers": "^0.0.69",
+    "@proshop-app/sdk": "^0.0.69",
+    "@proshop-app/types": "^0.0.69"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "latest",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "eslint": "^9.7.0",
+    "nuxt": "^3.13.2",
+    "typescript": "^5.5.3",
+    "vue": "3.5.6"
+  }
+}

@@ -21,7 +21,7 @@
     <v-card
         class="product-card"
         style="width: 100%;"
-        color="white"
+        color="green"
     >
         <client-only>
             <div class="product-card__favorite d-flex justify-center align-center">

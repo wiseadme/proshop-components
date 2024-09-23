@@ -83,10 +83,11 @@
             <plus-minus-buttons
                 v-else
                 block
-                :quantity="quantity"
                 @minus="$emit('remove:from-cart', product)"
                 @plus="$emit('add:to-cart', product)"
-            />
+            >
+                {{ quantity }}
+            </plus-minus-buttons>
         </v-card-actions>
     </v-card>
 </template>

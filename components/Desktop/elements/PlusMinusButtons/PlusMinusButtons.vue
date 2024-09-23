@@ -1,7 +1,6 @@
 <script lang="ts" setup>
     const { block = false } = defineProps<{
         block?: boolean
-        quantity?: number
     }>()
 
     defineEmits<{
@@ -27,7 +26,7 @@
             />
         </v-button>
         <div class="mx-2">
-            {{ quantity }}
+            <slot></slot>
         </div>
         <v-button
             color="primary app-border-radius"
